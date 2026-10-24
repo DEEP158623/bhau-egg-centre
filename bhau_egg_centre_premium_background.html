@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Bhau Egg Centre | Premium Egg Restaurant</title>
+<style>
+:root{--bg:#080604;--card:#17130d;--gold:#f4b942;--cream:#fff7e6;--muted:#c2bbb0}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,sans-serif;background:radial-gradient(circle at 50% -10%,#4a3210 0%,#1b1208 24%,#0b0805 55%,#050403 100%);color:#fff;line-height:1.5;background-attachment:fixed}
+nav{position:sticky;top:0;z-index:5;background:#0d0d0df2;backdrop-filter:blur(10px);display:flex;justify-content:space-between;align-items:center;padding:16px 6%;border-bottom:1px solid #292929}
+.logo{font-weight:900;font-size:21px;color:var(--gold)}nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;padding:80px 6%;background:radial-gradient(circle at 50% 15%,#6a4712 0%,#2d1d09 20%,rgba(20,13,6,.96) 48%,#080604 82%),linear-gradient(135deg,#0b0805,#241606)}
+.badge{display:inline-block;border:1px solid #6f5420;color:var(--gold);padding:7px 14px;border-radius:30px;margin-bottom:18px;font-size:12px}
+h1{font-size:clamp(44px,9vw,88px);line-height:.95;margin-bottom:20px}h1 span{color:var(--gold)}
+.hero p{max-width:650px;margin:auto;color:var(--muted);font-size:18px}
+.btn{display:inline-block;border:0;border-radius:12px;padding:14px 20px;margin:24px 7px 0;font-weight:800;text-decoration:none;cursor:pointer}
+.primary{background:var(--gold);color:#111}.secondary{border:1px solid #555;color:#fff;background:#181818}
+section{padding:70px 6%;background:linear-gradient(180deg,rgba(8,6,4,.05),rgba(8,6,4,.28))}.section-head{text-align:center;margin-bottom:34px}.section-head h2{font-size:36px}.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;max-width:1100px;margin:auto}
+.card{background:var(--card);border:1px solid #292929;border-radius:18px;padding:20px;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#70551f}
+.emoji{font-size:52px;background:#211b10;border-radius:15px;text-align:center;padding:18px;margin-bottom:15px}.card h3{margin-bottom:5px}.card p{color:var(--muted);font-size:14px}.price{color:var(--gold);font-weight:900;margin-top:12px}
+.card button{width:100%;margin-top:14px;padding:11px;border:0;border-radius:10px;background:#fff;color:#111;font-weight:800;cursor:pointer}
+.offer{background:linear-gradient(120deg,#201706,#171717);border:1px solid #624c20;border-radius:24px;max-width:1100px;margin:auto;padding:32px;text-align:center}.offer h2{color:var(--gold)}
+.about{max-width:850px;margin:auto;text-align:center}.about p{color:var(--muted)}
+footer{text-align:center;padding:30px;color:#888;border-top:1px solid #252525}
+.cart{position:fixed;right:18px;bottom:18px;background:var(--gold);color:#111;border:0;border-radius:50px;padding:15px 20px;font-weight:900;box-shadow:0 8px 30px #000;cursor:pointer}
+.modal{display:none;position:fixed;inset:0;background:#000b;z-index:10;align-items:end;justify-content:center}.modal.open{display:flex}
+.sheet{background:#161616;width:min(620px,100%);padding:28px;border-radius:24px 24px 0 0;border:1px solid #333}.sheet h2{color:var(--gold);margin-bottom:15px}.cartitem{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #292929}.total{font-size:20px;font-weight:900;margin-top:18px}.close{float:right;background:none;color:#fff;border:0;font-size:24px}
+input,textarea{width:100%;background:#222;color:#fff;border:1px solid #444;border-radius:10px;padding:12px;margin-top:9px}
+
+.review-box{max-width:900px;margin:auto;background:var(--card);border:1px solid #292929;border-radius:20px;padding:24px}
+.review-form{display:grid;gap:12px;margin-bottom:28px}
+.review-form select{width:100%;background:#222;color:#fff;border:1px solid #444;border-radius:10px;padding:12px}
+.review-form button{padding:12px;border:0;border-radius:10px;background:var(--gold);color:#111;font-weight:900;cursor:pointer}
+.review-list{display:grid;gap:12px}
+.review{background:#202020;border:1px solid #303030;border-radius:14px;padding:16px}
+.review-top{display:flex;justify-content:space-between;gap:12px}
+.stars{color:var(--gold);letter-spacing:2px}
+.review small{color:var(--muted)}
+
+@media(max-width:650px){nav div:last-child{display:none}section{padding:55px 5%}.hero{min-height:70vh}}
+</style>
+</head>
+<body>
+<nav><div class="logo">🍳 BHAU EGG CENTRE</div><div><a href="#menu">Menu</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div><div class="badge">PREMIUM EGG • FRESH • FAST</div>
+<h1>Eggs done<br><span>the Bhau way.</span></h1>
+<p>Fresh eggs, loaded omelettes and delicious egg specials — made hot, fresh and full of flavour.</p>
+<a class="btn primary" href="#menu">View Menu</a>
+<a class="btn secondary" href="tel:+919023363050">📞 Call Now</a>
+<a class="btn secondary" href="https://maps.app.goo.gl/Tcmmz1pECfZuoqTj6" target="_blank" rel="noopener">📍 Google Maps</a>
+<a class="btn secondary" href="https://wa.me/919023363050" target="_blank">WhatsApp Order</a>
+</div></header>
+
+<section id="menu"><div class="section-head"><h2>Our Menu</h2><p>Tap “Add to Cart” to build your order.</p></div>
+<div class="grid" id="menuGrid"></div></section>
+
+
+
+<section id="about"><div class="about"><div class="section-head"><h2>Why Bhau Egg Centre?</h2></div><p>We keep it simple: fresh eggs, quality ingredients, generous portions and food served hot. Whether you're grabbing a quick breakfast or satisfying a late-night craving, Bhau Egg Centre is ready.</p></div></section>
+
+
+<section id="reviews">
+<div class="section-head">
+<h2>Customer Reviews</h2>
+<p>Tell us how you liked your Bhau Egg Centre experience.</p>
+</div>
+<div class="review-box">
+<form class="review-form" onsubmit="addReview(event)">
+<input id="reviewName" placeholder="Your name" required>
+<select id="reviewRating" required>
+<option value="">Select rating</option>
+<option value="5">★★★★★ — Excellent</option>
+<option value="4">★★★★☆ — Very Good</option>
+<option value="3">★★★☆☆ — Good</option>
+<option value="2">★★☆☆☆ — Okay</option>
+<option value="1">★☆☆☆☆ — Poor</option>
+</select>
+<textarea id="reviewText" placeholder="Write your review..." rows="4" required></textarea>
+<button type="submit">Submit Review</button>
+</form>
+<div class="review-list" id="reviewList"></div>
+</div>
+</section>
+
+<section id="contact"><div class="section-head"><h2>Visit Bhau Egg Centre</h2><p>Open daily from 6:00 PM to 12:00 AM.</p></div>
+<div class="grid"><div class="card"><h3>📍 Location</h3><p>Vandarvat Talav, Mahalaxmi State, Vatva, Ahmedabad, Gujarat</p><a class="btn secondary" style="margin:14px 0 0;width:100%;text-align:center" href="https://maps.app.goo.gl/Tcmmz1pECfZuoqTj6" target="_blank" rel="noopener">Open in Google Maps</a></div><div class="card"><h3>📞 Call</h3><p>9023363050</p><a class="btn primary" style="margin:14px 0 0;width:100%;text-align:center" href="tel:+919023363050">Call Now</a></div><div class="card"><h3>🕐 Hours</h3><p>6:00 PM – 12:00 AM</p></div></div></section>
+
+<footer>© 2026 Bhau Egg Centre • Made with ❤️ for egg lovers</footer>
+<button class="cart" onclick="openCart()">🛒 Cart <span id="count">0</span></button>
+
+<div class="modal" id="modal"><div class="sheet"><button class="close" onclick="closeCart()">×</button><h2>Your Order</h2><div id="cartItems"></div><div class="total">Total: ₹<span id="total">0</span></div>
+<input id="name" placeholder="Your name"><input id="phone" placeholder="Phone number"><textarea id="address" placeholder="Delivery / pickup note"></textarea>
+<button class="btn primary" style="width:100%" onclick="sendWhatsApp()">Send Order on WhatsApp</button></div></div>
+
+<script>
+const items=[
+['Egg Omelette with Pav','1 egg, fresh omelette served with pav',35,'🍳'],
+['Egg Bhurji with Pav','1 egg bhurji served hot with pav',45,'🍳'],
+['Cheese Omelette with Pav','1 egg cheese omelette served with pav',40,'🧀'],
+['Masala Boiled with Pav','1 egg masala boiled egg served with pav',30,'🥚'],
+['Ghotala with 3 Pav','5 eggs, spicy ghotala served with 3 pav',130,'🔥'],
+['Boiled Egg','1 fresh boiled egg',15,'🥚'],
+['Boiled Khima with Pav','1 egg boiled khima served with pav',50,'🍳'],
+['Boiled Khima with 2 Pav','2 eggs boiled khima served with 2 pav',90,'🍳'],
+['Egg Half Fry','1 egg half fry',25,'🍳']
+];
+let cart=[];
+const grid=document.getElementById('menuGrid');
+items.forEach(x=>grid.innerHTML+=`<div class="card"><div class="emoji">${x[3]}</div><h3>${x[0]}</h3><p>${x[1]}</p><div class="price">₹${x[2]}</div><button onclick="add('${x[0]}',${x[2]})">Add to Cart</button></div>`);
+function add(name,price){let x=cart.find(i=>i.name===name);x?x.qty++:cart.push({name,price,qty:1});update()}
+function update(){document.getElementById('count').textContent=cart.reduce((a,b)=>a+b.qty,0)}
+function openCart(){document.getElementById('modal').classList.add('open');render()}
+function closeCart(){document.getElementById('modal').classList.remove('open')}
+function render(){let total=cart.reduce((a,b)=>a+b.price*b.qty,0);document.getElementById('total').textContent=total;document.getElementById('cartItems').innerHTML=cart.length?cart.map(i=>`<div class="cartitem"><span>${i.name} × ${i.qty}</span><b>₹${i.price*i.qty}</b></div>`).join(''):'<p style="color:#aaa">Your cart is empty.</p>'}
+function sendWhatsApp(){if(!cart.length)return alert('Please add an item first.');let n=document.getElementById('name').value||'Customer',p=document.getElementById('phone').value||'',a=document.getElementById('address').value||'Pickup';let order=cart.map(i=>`${i.name} x${i.qty} = ₹${i.price*i.qty}`).join('%0A');let t=cart.reduce((s,i)=>s+i.price*i.qty,0);let msg=`Hello Bhau Egg Centre!%0A%0AOrder:%0A${order}%0A%0ATotal: ₹${t}%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0ANote: ${encodeURIComponent(a)}`;window.open('https://wa.me/919023363050?text='+msg,'_blank')}
+
+const defaultReviews=[
+{name:'Rahul',rating:5,text:'Fresh eggs and really tasty omelette!'},
+{name:'Amit',rating:5,text:'Great taste, good quantity and fast service.'}
+];
+let reviews=JSON.parse(localStorage.getItem('bhauReviews')||'null')||defaultReviews;
+function showStars(r){return '★★★★★'.slice(0,r)+'☆☆☆☆☆'.slice(0,5-r)}
+function renderReviews(){
+  const box=document.getElementById('reviewList');
+  box.innerHTML=reviews.map(r=>`<div class="review"><div class="review-top"><b>${escapeHtml(r.name)}</b><span class="stars">${showStars(r.rating)}</span></div><p style="margin-top:8px">${escapeHtml(r.text)}</p></div>`).join('');
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+function addReview(e){
+  e.preventDefault();
+  const name=document.getElementById('reviewName').value.trim();
+  const rating=Number(document.getElementById('reviewRating').value);
+  const text=document.getElementById('reviewText').value.trim();
+  if(!name||!rating||!text)return;
+  reviews.unshift({name,rating,text});
+  localStorage.setItem('bhauReviews',JSON.stringify(reviews));
+  e.target.reset();
+  renderReviews();
+}
+renderReviews();
+</script>
+</body>
+</html>
